@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>web知识点</title>
+	<style>
+		h3::first-letter{
+			/*font-size: 100px;*/
+		}
+		h3::selection{
+			color:#0ef;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>CSS知识要点</h1>
+		<h2>CSS组合符号</h2>
+		<h3>空格：(&lt;font-size&gt;&nbsp;<sub style="font-size: 8px;">空格</sub>&nbsp;&lt;font-family&gt;）</h3>
+		<p>必须按顺序书写属性值，两者必须出现</p>
+		<h3>&amp;&amp;：（&lt;length&gt;&amp;&amp;&lt;percentage&gt;）</h3>
+		<p>可不按顺序书写属性值，两者必须出现</p>
+		<h3>||：（overline||underline）</h3>
+		<p>可不按顺序出现属性值，至少出现一个</p>
+		<h3>|:(color | transparent)</h3>
+		<p>只能出现一个属性值</p>
+		<h3>[]：（bold [thin||&lt;length&gt;]）</h3>
+		<p>中括号内属性值为一个整体与外面属性值进行计算</p>
+		<h3>+：（[&lt;color-stop&gt;]）</h3>
+		<p>加号可以取多个属性值，最少一个属性值</p>
+		<h3>?：（inset?&amp;&amp;&lt;color&gt;）</h3>
+		<p>问号表示该属性值可出现可不出现</p>
+		<h3>{}：（&lt;length&gt;{x,y}）</h3>
+		<p>表示属性值出现x次到y次之间</p>
+		<h3>*：（&lt;time&gt;[,&lt;time&gt;]*）</h3>
+		<p>*号表示属性值出现0次或者多次</p>
+		<h3>#：（&lt;time&gt;#）</h3>
+		<p>#表示属性值至少出现一次或多次</p>
+		<h2>伪元素选择器</h2>
+		<h3>::first-letter：选中某段的首个字</h3>
+		<h3>::first-line：选中某段的第一行</h3>
+		<h3>::befor：一般与content属性搭配使用，在选中位置之前插入content内容</h3>
+		<h3>::after：一般与content属性搭配使用，在选中位置之后插入content内容</h3>
+		<h3>::selection：被用户光标选中的情况下改变</h3>
+		<h2>常用CSS属性</h2>
+		<h3>字体font：[[&lt;font-style&gt;||&lt;font-weight&gt;]?&lt;font-size&gt;[/&lt;line-height&gt;]?&lt;font-family&gt;]</h3>
+		<p>font-size：&lt;length&gt;|&lt;percentage&gt;<br>em为单位的是以父元素为参照物</p>
+		<p>font-family：[&lt;family-name&gt;|&lt;generic-family&gt;]# <br>generic-family：serif | sans-serif <br>衬线体 | 非衬线体<br>family-name：为具体的字体名称</p>
+		<p>font-weight：normal | bold | bolder | lighter | 100 | …… | 900 </p>
+		<p>font-style：normal | italic | oblique <br>标准字体 | 倾斜字体 | 强制倾斜</p>
+		<p>line-height：normal | &lt;number&gt; | &lt;length&gt; | &lt;percentage&gt;</p>
+		<h3>颜色color：red | #fff | rgb(255,255,255) | rgba(255,255,255,1) | transparent</h3>
+		<h3>文本text</h3>
+		<h3>text-align：left | right | center | justify </h3>
+		<p>文字左右对齐方向：左对齐 | 右对齐 | 居中 | 两端对齐</p>
+		<h3>vertical-align：baseline | sub | spuer | top | text-top | middle | bottom | text-bottom | &lt;length&gt; | &lt;percentage&gt;</h3>
+		<p>文本上下对齐方向：基线对齐 | 下标 | 上标 | 行高顶部对齐 | 文字顶部对齐 | 居中 | 行高底部对齐 | 文字底部对齐 | 百分百参照行高 | 参照基线</p>
+		<h3>text-indent：&lt;length&gt; | &lt;percentage&gt;</h3>
+		<p>首行缩进：数值 | 百分百以容器为参照物</p>
+		<h3>white-space：normal | nowrap | pre | pre-wrap| pre-line </h3>
+		<p>换行：浏览器标准 | 不换行 | 保留格式 | 保留格式并换行 | 多个空格和tab合并成一个 </p>
+		<h3>word-wrap：normal | break-word</h3>
+		<p>单词换行：标准 | 单词破碎换行</p>
+		<h3>word-break：normal | keep-all | break-all</h3>
+		<p>任意字母换行</p>
+		<h3>text-shadow：none | [&lt;length&gt;{2,3}&amp;&amp;&lt;color&gt;?]#</h3>
+		<p>文字阴影：数值表示为X轴偏移，Y轴偏移，阴影模糊半径</p>
+		<h3>text-decoration：none | [underline||overline||line-through]</h3>
+		<p>文本下划线</p>
+		<h3>text-overflow：clip | ellipsis</h3>
+		<p>超出内容显示</p>
+		<h3>cursor：[&lt;uri&gt;,]*[auto | default | none | help | pointer | zoom-in | zoom-out | move]</h3>
+		<p>鼠标样式</p>
+		<h3>inherit：强制集成父元素属性</h3>
+	</div>	
+</body>
+</html>
